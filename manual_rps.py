@@ -1,9 +1,9 @@
-import random
+from random import choice
 
 CHOICES = ["Rock", "Paper", "Scissors"]
 
 def get_computer_choice():
-    return random.choice(CHOICES)
+    return choice(CHOICES)
 
 
 def get_user_choice():
