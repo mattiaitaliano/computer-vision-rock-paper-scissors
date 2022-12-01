@@ -11,24 +11,28 @@ def get_user_choice():
 
 
 def get_winner(computer_choice, user_choice):
-    if computer_choice == user_choice:
-        return "It is a tie!"
+    
+    if user_choice not in choices:
+        raise NameError("You should use Rock, Paper or Scissors as input.")
     else:
-        if computer_choice == choices[0]:
-            if user_choice == choices[1]:
-                return "You won!"
-            else:
-                return "You lost"
-        elif computer_choice == choices[1]:
-            if user_choice == choices[2]:
-                    return "You won!"
-            else:
-                    return "You lost"
+        if computer_choice == user_choice:
+            return "It is a tie!"
         else:
-            if user_choice == choices[0]:
+            if computer_choice == choices[0]:
+                if user_choice == choices[1]:
                     return "You won!"
+                else:
+                    return "You lost"
+            elif computer_choice == choices[1]:
+                if user_choice == choices[2]:
+                        return "You won!"
+                else:
+                        return "You lost"
             else:
-                    return "You lost"   
+                if user_choice == choices[0]:
+                        return "You won!"
+                else:
+                        return "You lost"   
 
 
 def play():
