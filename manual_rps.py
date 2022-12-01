@@ -1,9 +1,10 @@
-from random import choice
+import random
 
-CHOICES = ["Rock", "Paper", "Scissors"]
+choices = ["Rock", "Paper", "Scissors"]
 
 def get_computer_choice():
-    return choice(CHOICES)
+    choice = random.choice(choices)
+    return choice
 
 
 def get_user_choice():
@@ -14,18 +15,18 @@ def get_winner(computer_choice, user_choice):
     if computer_choice == user_choice:
         return "It is a tie!"
     else:
-        if computer_choice == CHOICES[0]:
-            if user_choice == CHOICES[1]:
+        if computer_choice == choices[0]:
+            if user_choice == choices[1]:
                 return "You won!"
             else:
                 return "You lost"
-        elif computer_choice == CHOICES[1]:
-            if user_choice == CHOICES[2]:
+        elif computer_choice == choices[1]:
+            if user_choice == choices[2]:
                     return "You won!"
             else:
                     return "You lost"
         else:
-            if user_choice == CHOICES[0]:
+            if user_choice == choices[0]:
                     return "You won!"
             else:
                     return "You lost"   
