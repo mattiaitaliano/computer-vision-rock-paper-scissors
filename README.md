@@ -1,6 +1,6 @@
 # Computer Vision RPS
 
-![alt text](./computervision.jpg)
+![alt text](https://blog.eduonix.com/wp-content/uploads/2019/10/CVT1.jpeg)
 
 ## Model and how to use it
 
