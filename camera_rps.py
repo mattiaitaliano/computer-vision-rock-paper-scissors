@@ -6,9 +6,11 @@ import time
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+starting_time = int(time.time())
+print(starting_time)
 
 def get_prediction(prediction):
-    time.time()
+    print("ENTERED HERE")
     if prediction[0][0] > 0.8:
         return "Rock"
     elif prediction[0][1] > 0.8:
@@ -19,7 +21,7 @@ def get_prediction(prediction):
         return "Nothing"
     
 
-while True: 
+while True:
     ret, frame = cap.read()
     resized_frame = cv2.resize(frame, (224, 224), interpolation = cv2.INTER_AREA)
     image_np = np.array(resized_frame)
@@ -28,7 +30,10 @@ while True:
     prediction = model.predict(data)
     cv2.imshow('frame', frame)
     # Press q to close the window
-    get_prediction(prediction)
+    current_time = int(time.time())
+    if current_time == starting_time+5:
+        print(get_prediction(prediction))
+        starting_time = int(time.time())
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
             
