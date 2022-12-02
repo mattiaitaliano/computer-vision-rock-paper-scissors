@@ -23,7 +23,7 @@ def get_winner(computer_choice, user_choice):
                     return "You won!"
             else:
                     return "You lost"
-        else:
+        elif computer_choice == "Scissors":
             if user_choice == "Rock":
                     return "You won!"
             else:
