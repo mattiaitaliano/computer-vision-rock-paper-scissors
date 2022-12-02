@@ -1,5 +1,7 @@
 # Computer Vision RPS
 
+![alt text](./computervision.jpg)
+
 ## Model and how to use it
 
 Thanks to https://teachablemachine.withgoogle.com/ I teached how to recognize 4 different images: Rock, Paper, Scissors and Nothing.
