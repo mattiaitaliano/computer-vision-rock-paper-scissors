@@ -1,7 +1,6 @@
 import random
 
 def get_computer_choice():
-    global choices 
     choices = ["Rock", "Paper", "Scissors"]
     return random.choice(choices)
 
@@ -11,28 +10,24 @@ def get_user_choice():
 
 
 def get_winner(computer_choice, user_choice):
-    
-    if user_choice not in choices:
-        raise NameError("You should use Rock, Paper or Scissors as input.")
+    if computer_choice == user_choice:
+        return "It is a tie!"
     else:
-        if computer_choice == user_choice:
-            return "It is a tie!"
-        else:
-            if computer_choice == choices[0]:
-                if user_choice == choices[1]:
-                    return "You won!"
-                else:
-                    return "You lost"
-            elif computer_choice == choices[1]:
-                if user_choice == choices[2]:
-                        return "You won!"
-                else:
-                        return "You lost"
+        if computer_choice == "Rock":
+            if user_choice == "Scissors":
+                return "You won!"
             else:
-                if user_choice == choices[0]:
-                        return "You won!"
-                else:
-                        return "You lost"   
+                return "You lost"
+        elif computer_choice == "Scissors":
+            if user_choice == "Paper":
+                    return "You won!"
+            else:
+                    return "You lost"
+        else:
+            if user_choice == "Rock":
+                    return "You won!"
+            else:
+                    return "You lost"   
 
 
 def play():
