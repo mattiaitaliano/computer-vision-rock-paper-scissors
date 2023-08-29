@@ -1,14 +1,19 @@
 # Computer Vision RPS: Play Rock, Paper, Scissors with Your Webcam
 
+Play rock, paper, scissors against your computer using your webcam. 
+
 <img src="https://blog.eduonix.com/wp-content/uploads/2019/10/CVT1.jpeg" alt="Image Alt Text" width="300">
 
 ## Overview
-Play rock, paper, scissors against your computer using your webcam! This Python program uses computer vision and machine learning to recognize hand signs for rock, paper, and scissors, allowing you to play the game in a fun and interactive way.
+
+This Python program uses computer vision and machine learning to recognize hand signs for rock, paper, and scissors, allowing you to play the game in a interactive way.
 
 ## Model and How to Use It
-The project uses a Keras model ([teachlabmachine](https://teachablemachine.withgoogle.com/ ))trained to recognize four different hand signs: Rock, Paper, Scissors, and Nothing. The webcam captures the hand sign you make, and the program recognizes it as one of the four categories. This input is then stored in variables, allowing the game to proceed.
+
+The project uses a Keras model ([teachlabmachine](https://teachablemachine.withgoogle.com/ )) trained to recognize four different hand signs: Rock, Paper, Scissors, and Nothing. The webcam captures the hand sign you make, and the program recognizes it as one of the four categories. This input is then stored in variables, allowing the game to proceed.
 
 ## Set Up
+
 1. Create a virtual environment.
 2. Install the required packages:
 - TensorFlow
