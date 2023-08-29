@@ -2,7 +2,7 @@
 
 Play rock, paper, scissors against your computer with your webcam!
 
-<img src="https://blog.eduonix.com/wp-content/uploads/2019/10/CVT1.jpeg" alt="Image Alt Text" width="300" height="200">
+<img src="https://blog.eduonix.com/wp-content/uploads/2019/10/CVT1.jpeg" alt="Image Alt Text" width="200">
 
 ## Model and how to use it
 
